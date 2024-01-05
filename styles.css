@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(235, 238, 238);
 }
 
 .container {
@@ -20,7 +20,7 @@ body {
 
 #background-image {
   width: 535px;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -48,10 +48,33 @@ body {
 /* ------------------------------------ Right Side ----------------------------------------- */
 .right-side {
   margin-top: 145px;
+}
+
+.right-side-text {
+  width: 660px;
+  height: 135px;
   margin-left: 55px;
 }
 
-.right-side-text{
-  width: 660px;
-  height: 135px;
+/* it targets second p from .right-side-text */
+.right-side-text p:nth-child(2) {
+  margin-top: 37px;
+}
+
+.form-container {
+  margin-left: 55px;
+  background-color: white;
+  border: 2px solid rebeccapurple;
+  box-shadow: 0 8px 6px -6px black;
+  height: 300px;
+}
+
+.form-container h4{
+  margin-top: 20px;
+}
+
+.form-container .first-row-form, .second-row-form, .third-row-form{
+  display: flex;
+  margin-top: 20px;
+
 }
