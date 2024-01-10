@@ -48,12 +48,15 @@ body {
 /* ------------------------------------ Right Side ----------------------------------------- */
 .right-side {
   margin-top: 145px;
+  border: 1px solid greenyellow;
+  width: 100vw;
 }
 
 .right-side-text {
   width: 660px;
   height: 135px;
   margin-left: 55px;
+  text-wrap: wrap;
 }
 
 /* it targets second p from .right-side-text */
@@ -62,19 +65,57 @@ body {
 }
 
 .form-container {
-  margin-left: 55px;
+  /* margin-left: 55px; */
   background-color: white;
-  border: 2px solid rebeccapurple;
+  /* border: 2px solid rgb(255, 113, 4); */
+  width: 100%;
   box-shadow: 0 8px 6px -6px black;
   height: 300px;
 }
 
-.form-container h4{
-  margin-top: 20px;
+.form-container h4 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 55px;
+  margin-bottom: 20px;
 }
 
-.form-container .first-row-form, .second-row-form, .third-row-form{
+.form-container .first-row-form,
+.second-row-form,
+.third-row-form {
+  margin-left: 55px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 15px;
+}
 
+.label-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 270px;
+  height: 60px;
+}
+
+button {
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 235px;
+  height: 55px;
+  background-color: #596d48;
+  margin-top: 35px;
+  margin-left: 55px;
+}
+
+.bottom-right-side p {
+  margin-top: 30px;
+  margin-left: 55px;
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+  }
 }
