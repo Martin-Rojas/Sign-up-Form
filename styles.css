@@ -96,6 +96,20 @@ body {
   height: 60px;
 }
 
+input {
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border-top: 1px solid #aeb1ab;
+  border-right: 1px solid #0f73ff;
+  border-bottom: 1px solid #0f73ff;
+  border-left: 1px solid #0f73ff;
+  /* box-shadow: 2px 5px #0f73ff; */
+  box-shadow: 0 8px 8px -4px #0f73ff;
+}
+
 button {
   color: white;
   font-size: 20px;
@@ -110,12 +124,4 @@ button {
 .bottom-right-side p {
   margin-top: 30px;
   margin-left: 55px;
-}
-
-@media (max-width: 900px) {
-  .form-container {
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-  }
 }
